@@ -1,0 +1,80 @@
+<div id="content" class="black inner-small">
+   <br /><br />
+   <br />  
+         {{ session.getNotif|raw }}
+   <div class="bloc">
+      <div class="title">
+         <div class="tabs" id="tabs1">{{ name|upper }} [TARIFICATION]</div>
+         <a href="#" class="toggle"></a></div>               <div class="content" id="admin_software">
+         <br>              <br>
+         <table>
+            <thead>
+               <tr>
+                  <th style="padding-left: 20px;">Option</th>
+                  <th style="text-align: left">&nbsp;&nbsp;Type</th>
+                  <th style="text-align: left">&nbsp;&nbsp;Engagement</th>
+                  <th style="text-align: center">Actions</th>
+               </tr>
+            </thead>
+            <tbody id="sortme" role="1">
+            {% for key, item in render %}
+                  {% if  item.id != 0  %}
+                 {% set class = 'sort' %}
+                  {% else %}
+                 {% set class = 'noSort' %}
+                  {% endif %}
+                  <tr id="menu_{{ key }}_{{ item.id }}" class="{{ class }}">
+                     <td style="text-align: left;padding-left: 20px ;">{{ item.status|capitalize }}</td>
+                     <td style="text-align: left;">{{ item.option|capitalize }} </td>
+                     <td style="text-align: left;">
+                        {% if item.engagement != 0 %}
+                                 {{ item.engagement }} Mois
+                               {% else %}
+                           Sans Engaagement
+                             {% endif %}
+                        </td>
+                        <td class="actions" style="width: 20%;text-align: center;">
+                           <a target="_blank" href="{{ config.partnerUrl }}/products/price_update.php?id={{ item.id }}&pcid={{ id }}&action=update&status={{ key }}" class="stt" oldtitle="Modifier"><img src="{{ config.adminUrl }}/img/icons/actions/edit.png" role="{{ id }}" alt="edit"></a>
+                     {% if key > 0 %}
+                              <a href="{{ config.partnerUrl }}/products/license_prices.php?id={{ id }}&del={{ item.id }}&company={{ config.user }}&token={{ config.token }}" class="stt" title="Supprimer"><img src="{{ config.adminUrl }}/img/icons/actions/delete.png" alt="" width="21" height="21" id="del_{{ id }}"></a>
+                     {% else %}
+                                 <img src="{{ config.adminUrl }}/img/icons/empty.png" alt="" width="21" height="21" id="del_{{ id }}">
+                     {% endif %}
+                              </td>
+                           </tr>
+              {% endfor %}
+                        </tbody>
+                     </table>
+                     <br>      <br>      <br>      <br>
+                     <a class="button" id="new-product" href="{{ config.partnerUrl }}//products/price_update.php?pcid={{ id }}&action=new" style="position:absolute; bottom: 8px; right: 20px;"><img src="{{ config.adminUrl }}/img/icons/menu/upload.png">&nbsp;&nbsp;Nouveau</a>                </div>
+               </div>      
+{{ bulle|raw }}                  
+               <input type="hidden" id="order_type" name="order_type" value="ASC" />
+               <input type="hidden" id="order" name="order" value="position" />
+               <input type="hidden" id="token" name="token" value="{{ config.token }}" />
+               <input type="hidden" id="id_soc" name="id_soc" value="{{ config.user }}" />
+            </div>
+            <script type="text/javascript">
+               //sortable************************************************
+               $(document).ready(function() {
+                  $("#sortme").sortable({
+                     items: ".sort",
+                     opacity: 0.6,
+                     cursor: 'move',
+                     update: function(event, ui) {
+                        var order = $('#sortme').sortable('serialize');
+                        var type = $(this).attr("role");
+                        var uri = "includes/php_ajax/sort_prices.php?" + order + "&type=" + type;
+                        $.ajax({
+                           url: uri,
+                           type: "post",
+                           error: function() {
+                              alert("Erreur Ajax");
+                           }
+                        });
+                     }
+                  });
+                  //
+               });
+//@sortable***********************************************
+               </script>
