@@ -1,7 +1,7 @@
 <?php
-//-------------------------------------
+//---------------------------------------------
 require_once 'MyLib/init.php';
-//------------------
+//----------------------------------------------
 $setupSymfony = new setupSymfony($viewDir = "views");
 $twig = $setupSymfony->twig();
 
