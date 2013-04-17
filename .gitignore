@@ -1,5 +1,5 @@
 # Symfony directories
-/nbproject/*
+*/nbproject/*
 
 # Bootstrap ##########################
 Symfony/app/bootstrap

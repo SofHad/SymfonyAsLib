@@ -3,7 +3,7 @@
   # ------------------------------------------------------------------------
   # SmfonyWithMyLib
   # ------------------------------------------------------------------------
-  # Developper : Sofiane Haddag, sofiane.haddag@gmail.com
+  # Developer : Sofiane Haddag, sofiane.haddag@gmail.com
  */
 require_once 'MyLib/init.php';
 //----------------------------------------------
