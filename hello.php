@@ -15,3 +15,4 @@ echo $setupSymfony->twigRender($twig, 'hello.html.twig', array(
 ));
 
 ?>
+
