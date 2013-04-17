@@ -8,4 +8,8 @@ $twig = $setupSymfony->twig();
 echo $setupSymfony->twigRender($twig, 'hello.html.twig', array(
     'name' => hello(),
 ));
+
+
+//----------------------------------------------------------------------
 ?>
+
