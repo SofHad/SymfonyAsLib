@@ -1,7 +1,7 @@
 <?php
 /*
   # ------------------------------------------------------------------------
-  # ymfonyWithMyLib
+  # SmfonyWithMyLib
   # ------------------------------------------------------------------------
   # Developper : Sofiane Haddag, sofiane.haddag@gmail.com
  */
