@@ -1,7 +1,0 @@
-parameters:
-#    test_un.example.class: Test\UnBundle\Example
-
-services:
-#    test_un.example:
-#        class: %test_un.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]

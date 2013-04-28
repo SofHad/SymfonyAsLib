@@ -10,6 +10,7 @@ Symfony/logs/*
 Symfony/cache/*
 Symfony/web/uploads/*
 Symfony/web/bundles/*
+Symfony/*
 
 # Configuration files
 Symfony/app/config/parameters.ini
