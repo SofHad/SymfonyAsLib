@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: 'C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/app/config/routing_dev.yml'
