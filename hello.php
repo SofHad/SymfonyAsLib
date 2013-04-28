@@ -1,10 +1,11 @@
 <?php
 /*
   # ------------------------------------------------------------------------
-  # SmfonyWithMyLib
+  # SymfonyAsLib
   # ------------------------------------------------------------------------
-  # Developer : Sofiane Haddag, sofiane.haddag@gmail.com
+  # Developer : Sofiane Haddag, sofiane.haddag@yahoo.fr
  */
+
 require_once 'MyLib/init.php';
 //----------------------------------------------
 $setupSymfony = new setupSymfony($viewDir = "views");

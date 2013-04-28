@@ -1,19 +1,12 @@
 <?php
-
 /*
-  /*
   # ------------------------------------------------------------------------
-  # CapCloud
+  # SymfonyAsLib
   # ------------------------------------------------------------------------
-  # Copyright (C) 20011 Acropolis Telecom All Rights Reserved.
-  # Developper : Sofiane Haddag, shaddag@acropolistelecom.net.
+  # Developer : Sofiane Haddag, sofiane.haddag@yahoo.fr
  */
 
-/**
- *  Classe qui gére less accès à la BDD
- *
- */
-//include config::classes()."Symfony/vendor/twig/twig/lib/Twig/LoaderInterface.php" ;
+
 use Symfony\Component\Validator\Validation;
 use Symfony\Component\ClassLoader\UniversalClassLoader;
 use Symfony\Bridge\Twig\Form\TwigRendererEngine;

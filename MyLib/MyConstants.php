@@ -1,4 +1,11 @@
 <?php
+/*
+  # ------------------------------------------------------------------------
+  # SymfonyAsLib
+  # ------------------------------------------------------------------------
+  # Developer : Sofiane Haddag, sofiane.haddag@yahoo.fr
+ */
+
 define('SYMFONY_COMPONENT', "Symfony/vendor/symfony/symfony/src/");
 define('TWIG_DIR', "Symfony/vendor/twig/twig/lib/Twig/");
 define('VENDOR_DIR','Symfony/vendor');
