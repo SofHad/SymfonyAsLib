@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Routing/RouterInterface.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Routing/Route.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Templating/StreamingEngineInterface.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Templating/TemplateReference.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Templating/Loader/Loader.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Validator/Validation.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Validator/Validator.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Validator/ValidatorInterface.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Validator/Constraints/Country.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Validator/Constraint.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Validator/ValidatorFactory.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Validator/GraphWalker.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Validator/ValidatorBuilderInterface.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Validator/ValidatorBuilder.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Validator/ObjectInitializerInterface.php</file>
+        <file>file:/C:/xampp/htdocs/PROJECTS/SYMFONY.2.1.V2/path/vendor/symfony/symfony/src/Symfony/Component/Validator/GlobalExecutionContext.php</file>
+    </open-files>
+</project-private>
