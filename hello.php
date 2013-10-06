@@ -3,7 +3,7 @@
   # ------------------------------------------------------------------------
   # SymfonyAsLib
   # ------------------------------------------------------------------------
-  # Developer : Sofiane Haddag, sofiane.haddag@yahoo.fr
+  # Developer: Sofiane Haddag, sofiane.haddag@yahoo.fr
  */
 
 require_once 'MyLib/init.php';
