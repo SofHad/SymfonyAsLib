@@ -1,4 +1,0 @@
-SymfonyWithMyLib
-================
-
-SymfonyWithMyLib
