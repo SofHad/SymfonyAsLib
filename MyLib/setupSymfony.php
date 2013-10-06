@@ -112,10 +112,10 @@ class setupSymfony {
    public function formTranslator() {
 
 // Set up the Translation component
-      $translator = new Translator('fr');
+      $translator = new Translator(LOCALE);
       $translator->addLoader('xlf', new XliffFileLoader());
-      $translator->addResource('xlf', VENDOR_FORM_DIR . '/Resources/translations/validators.fr.xlf', 'fr', 'validators');
-      $translator->addResource('xlf', VENDOR_VALIDATOR_DIR . '/Resources/translations/validators.fr.xlf', 'fr', 'validators');
+      $translator->addResource('xlf', VENDOR_FORM_DIR . '/Resources/translations/validators.'.LOCALE.'.xlf', LOCALE, 'validators');
+      $translator->addResource('xlf', VENDOR_VALIDATOR_DIR . '/Resources/translations/validators.'.LOCALE.'.xlf', LOCALE, 'validators');
       return $translator;
    }
 

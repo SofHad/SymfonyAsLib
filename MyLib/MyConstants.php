@@ -15,6 +15,7 @@ define('VENDOR_VALIDATOR_DIR', VENDOR_DIR . '/symfony/symfony/src/Symfony/Compon
 define('VENDOR_FORM_DIR', VENDOR_DIR . '/symfony/symfony/src/Symfony/Component/Form');
 define('VENDOR_TWIG_BRIDGE_DIR', VENDOR_DIR . '/symfony/symfony/src/Symfony/Bridge/Twig');
 define('VENDOR_TWIG_LIB', VENDOR_DIR . '/twig/twig/lib/');
+define ("LOCALE", "fr");
 
 
 

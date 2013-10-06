@@ -3,7 +3,7 @@
   # ------------------------------------------------------------------------
   # SymfonyAsLib
   # ------------------------------------------------------------------------
-  # Developer : Sofiane Haddag, sofiane.haddag@yahoo.fr
+  # Developer: Sofiane Haddag, sofiane.haddag@yahoo.fr
  */
 
 require_once 'MyLib/init.php';
@@ -16,17 +16,6 @@ use Symfony\Component\Validator\Constraints\Length ;
 //Twig
 $setupSymfony = new setupSymfony($viewDir = "views");
 $twig = $setupSymfony->twig();
-
-//$csrfProvider = new DefaultCsrfProvider(CSRF_SECRET);
-//
-//// Set up the Validator component
-//$validator = Validation::createValidator();
-//
-////From Factory
-//$formFactory = Forms::createFormFactoryBuilder()
-//    ->addExtension(new CsrfExtension($csrfProvider))
-//    ->addExtension(new ValidatorExtension($validator))
-//    ->getFormFactory();
 
 $formFactory = $setupSymfony->getFormFactory($twig) ;
 
