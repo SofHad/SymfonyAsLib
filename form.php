@@ -1,25 +1,25 @@
 <?php
-/**
-  # ------------------------------------------------------------------------
-  # SymfonyAsLib
-  # ------------------------------------------------------------------------
-  # Developer: Sofiane Haddag, sofiane.haddag@yahoo.fr  -
+/*
+ * This file is part of the SofHad package.
  *
+ * (c) Sofiane HADDAG <sofiane.haddag@yahoo.fr>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
-require_once 'MyLib/init.php';
 
 use Symfony\Component\Validator\Constraints\NotBlank ;
 use Symfony\Component\Validator\Constraints\Length ;
 
+require_once 'MyLib/init.php';
 //----------------------------------------------
 
 //Twig
-$setupSymfony = new setupSymfony($viewDir = "views");
-$twig = $setupSymfony->twig();
+//$viewDir = View Directory
+$app = new SetupSymfony($viewDir = "views");
+$twig = $app->twig();
 
-$formFactory = $setupSymfony->getFormFactory($twig) ;
-
+$formFactory = $app->getFormFactory($twig) ;
 $form = $formFactory->createBuilder()
     ->add('firstName', 'text', array(
         'constraints' => array(
@@ -49,7 +49,7 @@ if (isset($_POST[$form->getName()])) {
     }
 }
 
-echo $twig->render('Example.form.html.twig', array(
+echo $twig->render('form.html.twig', array(
     'form' => $form->createView(),
 ));
 

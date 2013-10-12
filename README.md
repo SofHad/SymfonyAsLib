@@ -1,4 +1,1 @@
-SymfonyWithMyLib
-================
-
-SymfonyWithMyLib
+Using Symfony components and Twig associated with your own lib.

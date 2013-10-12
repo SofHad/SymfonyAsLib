@@ -1,9 +1,11 @@
 <?php
 /*
-  # ------------------------------------------------------------------------
-  # SymfonyAsLib
-  # ------------------------------------------------------------------------
-  # Developer : Sofiane Haddag, sofiane.haddag@yahoo.fr
+ * This file is part of the SofHad package.
+ *
+ * (c) Sofiane HADDAG <sofiane.haddag@yahoo.fr>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
 
@@ -21,11 +23,9 @@ use Symfony\Bridge\Twig\Extension\FormExtension;
 use Symfony\Bridge\Twig\Form\TwigRenderer;
 use Symfony\Component\Yaml\Yaml;
 
-class setupSymfony {
+class SetupSymfony {
 
-   private $viewDir, $formEngine, $csrfProvider;
-   private $translator;
-   private $validator;
+   private $viewDir, $formEngine, $csrfProvider, $translator, $validator;
 
    /**
     * __construct

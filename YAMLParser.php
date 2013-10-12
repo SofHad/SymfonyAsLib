@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the SofHad package.
  *
@@ -9,15 +8,15 @@
  * file that was distributed with this source code.
  */
 
+use Symfony\Component\Yaml\Parser;
+
 require_once 'MyLib/init.php';
 //----------------------------------------------
 
-$hello = new SetupSymfony($viewDir = "views");
-$twig = $hello->twig();
+$yaml = new Parser();
 
-echo $hello->twigRender($twig, 'hello.html.twig', array(
-    'name' => hello(),
-));
+$config = $yaml->parse(file_get_contents('MyData/MyConfig.yml'));
 
-?>
+echo "<pre>";
+var_dump($config); die;
 
